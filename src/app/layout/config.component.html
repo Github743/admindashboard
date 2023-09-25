@@ -1,14 +1,14 @@
 <div id="layout-config" class="layout-config" [ngClass]="{'layout-config-active': appService.configActive}"
     (click)="appService.onConfigClick()">
 
-    <button pButton pRipple type="button" icon="fi fi-rr-cross-small"
+    <button pButton pRipple type="button" icon="pi pi-times"
         class="p-button-rounded p-button-danger p-button-text layout-config-close"
         (click)="onConfigButtonClick($event)">
     </button>
 
     <div class="layout-config-content">
 
-        <h6 class="mt-0">بزرگ نمایی صفحه</h6>
+        <h6 class="mt-0">Scale</h6>
         <div class="config-scale">
             <button pButton pRipple type="button" icon="fi fi-rr-minus-small" (click)="decrementScale()"
                 class="p-button-rounded p-button-text" [disabled]="scale === scales[0]">
