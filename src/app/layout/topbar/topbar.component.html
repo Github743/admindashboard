@@ -1,0 +1,14 @@
+<div class="layout-topbar" *ngIf="isShowTopbar">
+    <a class="layout-topbar-logo">
+
+    </a>
+    <a class="p-link layout-menu-button layout-topbar-button" href="#" (click)="appService.toggleMenu($event)">
+        <i class="pi pi-bars"></i>
+    </a>
+    <div class="layout-topbar-menu" [ngClass]="{'layout-topbar-menu-mobile-active':appService.topMenuActive}">
+        <a id="layout-config-button" (click)="onConfigButtonClick($event)" class="p-link layout-topbar-button">
+            <i class="pi pi-cog"></i>
+            <span>Settings</span>
+        </a>
+    </div>
+</div>
